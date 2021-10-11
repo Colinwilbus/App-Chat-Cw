@@ -6,16 +6,22 @@
 .app {
   /* background-color: #505170; */
   background: linear-gradient(to top right, #191919, #4c4c4c);
+  height: 100%;
+  /* padding: 30px; */
+}
+.app_title {
+  padding: 50px 0;
+  /* height: 10vh; */
 }
 .title-app {
-  height: 10vh;
   font-size: 60px;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-image: linear-gradient(to right, #000, #dd1818);
 }
+
 .chat-app {
-  height: 90vh;
+  /* height: 90vh; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -28,13 +34,17 @@
   display: flex;
   justify-content: left;
   align-items: center;
-  padding: 100px;
+  padding: 50px;
 }
+
 .chat-app_img {
   padding: 50px;
   box-shadow: inset 0 0 20px black;
   border-radius: 10px;
   background-image: linear-gradient(to top right, #000, #202020, #dd1818);
+  @media screen and(min-width: 992px) {
+    padding: 50px;
+  }
 }
 .chat-app__image {
   width: 100%;
@@ -45,7 +55,7 @@
 }
 
 .chat-app__right {
-  padding: 50px;
+  padding: 20px;
   border-radius: 20px;
   background-color: transparent;
   box-shadow: 0 0 20px black;
@@ -55,6 +65,35 @@
   text-align: center;
   color: #d9d9d9;
   font-size: 2rem;
+}
+@media screen and (min-width: 768px) {
+  .chat-app__left {
+    padding: 100px;
+  }
+  .title-app {
+    font-size: 100px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .app_title {
+    padding: 50px 0;
+    height: 10vh;
+  }
+  .chat-app {
+    height: 90vh;
+  }
+  .title-app {
+    font-size: 60px;
+  }
+  .chat-app__right {
+    padding: 50px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .app_title {
+    padding: 0;
+    height: 10vh;
+  }
 }
 .chat-app__right form {
   padding: 30px;
