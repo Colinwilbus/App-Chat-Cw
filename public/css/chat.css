@@ -9,18 +9,18 @@
   overflow-x: hidden;
 }
 .app__left {
-  background-color: #505170;
+  background: linear-gradient(to top right, #191919, #4c4c4c);
 }
 .app__title {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  background-image: linear-gradient(90deg, #4550f8 0%, #fd632f 100%);
+  background-image: linear-gradient(to top right, #000, #202020, #dd1818);
 }
 
 .app__title--line {
   width: 40%;
   margin: 20px auto;
-  background-image: linear-gradient(90deg, #4550f8 0%, #fd632f 100%);
+
   height: 3px;
   border-radius: 50%;
 }
@@ -34,7 +34,8 @@
 }
 
 .app__item-user {
-  background-color: #252f3c;
+  background-image: linear-gradient(to top right, #000, #202020, #dd1818);
+
   margin-top: 20px;
   padding: 10px 20px;
   font-size: 20px;
@@ -44,9 +45,13 @@
 }
 
 .app__right {
+  background-color: #666666;
+  box-shadow: inset 0 0 20px black;
 }
 .app__messages {
   height: 90%;
+  /* background-color: #d9d9d9; */
+  box-shadow: 0 0 20px black;
 }
 
 /* render list message */
@@ -100,8 +105,14 @@
 .btn-send {
   width: 100px;
   font-size: 18px;
+  background-color: #666666;
+  color: #191919;
+  box-shadow: inset 0 0 10px black;
 }
 .btn-location {
   width: 100px;
   font-size: 18px;
+  background-color: #666666;
+  color: #191919;
+  box-shadow: inset 0 0 10px black;
 }

@@ -53,8 +53,8 @@
 
 .chat-app__title {
   text-align: center;
-  color: #e53434;
-  /* box-shadow: 0 0 10px black; */
+  color: #d9d9d9;
+  font-size: 2rem;
 }
 .chat-app__right form {
   padding: 30px;
@@ -64,15 +64,17 @@
 .chat-app__title--line {
   width: 40%;
   margin: 20px auto;
-  /* background-color: #e53434; */
+  /* background-color: #dd1818; */
   height: 3px;
   border-radius: 50%;
 }
 .chat-app__btn-join {
-  padding: 5px 10px;
-  background-color: #e53434;
+  padding: 10px 30px;
+  background: linear-gradient(to top right, #191919, #4c4c4c);
+  background: #252525;
+  box-shadow: 0 0 10px black;
   color: #ffffff;
   border: none;
   border-radius: 10px;
-  font-size: 30px;
+  font-size: 25px;
 }
