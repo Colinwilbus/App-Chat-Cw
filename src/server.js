@@ -74,7 +74,5 @@ io.on("connection", (socket) => {
     removeUser(socket.id);
   });
 });
-const port = process.env.POST || 1710;
-httpServer.listen(port, () => {
-  console.log("app running on port ", port);
-});
+const port = process.env.port || 1710;
+httpServer.listen(process.env.PORT || 1710);
